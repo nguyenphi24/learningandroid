@@ -1,14 +1,14 @@
 package com.tnpsw.learningandroid.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.tnpsw.learningandroid.R
+import com.tnpsw.learningandroid.base.BaseVBActivity
+import com.tnpsw.learningandroid.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+class MainActivity : BaseVBActivity<ActivityMainBinding>() {
+    override val layoutId: Int
+        get() = R.layout.activity_main
+
+
 }
